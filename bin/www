@@ -1,0 +1,14 @@
+'use strict';
+
+const co = require('co');
+
+const logger = require('../lib/services/logger');
+const config = require('../config');
+const app = require('../');
+const orm = require('../lib/orm');
+
+co(function * boot () {
+  logger.info('Initializing boot sequence');
+  yield orm.sync();
+  app.listen(config.PORT, () => logger.info(`Listening on ${ config.PORT }`));
+}).catch(err => logger.error(err));

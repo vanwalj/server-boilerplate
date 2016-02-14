@@ -1,0 +1,44 @@
+{
+  "name": "Boilerplate",
+  "version": "1.0.0",
+  "description": "My server boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "run": "bin/www",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanwalj/server-boilerplate"
+  },
+  "author": "Jordan Van Walleghem <j.vanwall@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/vanwalj/server-boilerplate/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/vanwalj/server-boilerplate#README",
+  "devDependencies": {
+    "chance": "^1.0.0",
+    "co-mocha": "^1.1.2",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^5.0.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "bcrypt": "^0.8.5",
+    "bluebird": "^3.3.1",
+    "koa": "^1.1.2",
+    "koa-auth-header-parser": "^1.0.0",
+    "koa-compose": "^2.3.0",
+    "koa-joi-validator": "^4.0.0",
+    "koa-router": "^5.3.0",
+    "lodash": "^4.2.1",
+    "pg": "^4.4.4",
+    "pg-native": "^1.10.0",
+    "rand-token": "^0.2.1",
+    "sequelize": "^3.19.2",
+    "winston": "^2.1.1"
+  }
+}
